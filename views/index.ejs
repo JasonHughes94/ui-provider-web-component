@@ -1,0 +1,17 @@
+<script>
+class HelloWorld extends HTMLElement {
+    constructor() {
+      super();
+      // Attach a shadow root to the element.
+      let shadowRoot = this.attachShadow({mode: 'open'});
+      shadowRoot.innerHTML = `
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+            <h5 class="my-0 mr-md-auto font-weight-normal">Taco Central</h5>
+        </div>
+      </div>
+      `;
+    }
+  }
+  customElements.define('hello-world', HelloWorld);
+</script>
