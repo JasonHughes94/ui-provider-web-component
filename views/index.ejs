@@ -1,4 +1,4 @@
-class HelloWorld extends HTMLElement {
+class TacoHeader extends HTMLElement {
     constructor() {
       super();
       let shadowRoot = this.attachShadow({mode: 'open'});
@@ -11,4 +11,4 @@ class HelloWorld extends HTMLElement {
       `;
     }
   }
-  customElements.define('hello-world', HelloWorld);
+  customElements.define('taco-header', TacoHeader);
