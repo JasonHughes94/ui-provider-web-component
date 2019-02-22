@@ -1,8 +1,6 @@
-<script>
 class HelloWorld extends HTMLElement {
     constructor() {
       super();
-      // Attach a shadow root to the element.
       let shadowRoot = this.attachShadow({mode: 'open'});
       shadowRoot.innerHTML = `
       <div class="container">
@@ -14,4 +12,3 @@ class HelloWorld extends HTMLElement {
     }
   }
   customElements.define('hello-world', HelloWorld);
-</script>
